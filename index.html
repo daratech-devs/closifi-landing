@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Closifi — Capture more leads, book more meetings, close more sales</title>
-<meta name="description" content="Capture more leads, book more meetings, automate your entire outreach and close more sales in less time. Closifi runs your follow-up across email, SMS and phone. 7-day free trial, no card required.">
-<meta property="og:title" content="Closifi — Capture more leads, book more meetings, close more sales">
-<meta property="og:description" content="Capture leads from LinkedIn, run automated outreach across email, SMS and phone, and book the meeting — one system.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="/assets/dashboards.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Closifi — Get more leads, book more meetings, close more sales</title>
+<meta name="description" content="Closifi captures your leads, follows up with every one of them by email, SMS and phone, and books meetings straight into your calendar. Stop losing customers you already paid to find. 7-day free trial.">
+<meta property="og:title" content="Closifi — Get more leads, book more meetings, close more sales">
+<meta property="og:description" content="One system that captures leads, chases every follow-up automatically, and books the meeting. No more deals lost because nobody remembered.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -25,168 +22,367 @@
     </a>
     <div class="nav-links">
       <a href="#how">How it works</a>
+      <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
-      <a href="#answers">Straight answers</a>
       <a href="#faq">FAQ</a>
-      <a href="https://app.closifi.app/login" style="color: #C4D6CD; margin-right: 8px;">Log in</a>
-      <a href="https://app.closifi.app/signup" class="nav-cta">Start free trial</a>
+      <a href="#start" class="nav-cta">Start free trial</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero" id="top">
   <div class="wrap hero-in">
     <div>
-      <span class="eyebrow eyebrow-light">Lead generation · Automated outreach · Calling · Booking</span>
-      <h1>The AI-powered lead generation and <em>outreach system.</em></h1>
-      <p class="lede">All the tools you need to capture, nurture and close new leads into replies, booked meetings and paying customers — in one place, instead of four subscriptions that never talk to each other.</p>
+      <span class="eyebrow eyebrow-l">Lead generation · Automated follow-up · Calling · Booking</span>
+      <h1>Get more leads, book more meetings, and <em>close more sales</em> — without chasing anyone yourself.</h1>
+      <p class="lede">Closifi finds and saves your leads, follows up with every single one by email, SMS and phone until they answer, and books them straight into your calendar. You stop losing customers you already paid to find — and you stop doing the chasing.</p>
 
-      <form class="signup" id="signupForm" action="https://app.closifi.app/signup" method="GET">
+      <form class="signup" id="signupForm">
         <label for="email" style="position:absolute;left:-9999px">Work email</label>
         <input type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email">
         <button type="submit" class="btn btn-primary">Start free trial</button>
       </form>
-      <p class="legal-line">Seven days free. No card required, and nothing bills automatically when it ends. By signing up you agree to our <a href="https://app.closifi.app/privacy">Terms</a> and <a href="https://app.closifi.app/privacy">Privacy Policy</a>.</p>
+      <p class="legal-line">Free for 7 days. No card needed, and nothing bills automatically. By signing up you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
 
-      <div class="hero-assure">
+      <div class="assure">
+        <span><svg class="tick" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="#7FBFA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Set up in under 20 minutes</span>
         <span><svg class="tick" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="#7FBFA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Cancel any time</span>
-        <span><svg class="tick" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="#7FBFA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Export your data whenever you want</span>
+        <span><svg class="tick" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 5" stroke="#7FBFA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Your data exports whenever you want</span>
       </div>
     </div>
 
-    <div class="mock" role="img" aria-label="Actual Closifi Dashboard Screenshot">
-      <div class="mock-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="mock-title">app.closifi.app/crm/dashboard</span></div>
-      <img src="/assets/dashboards.png" alt="Closifi Dashboard Interface" class="screenshot-img" />
+    <div class="mock" role="img" aria-label="A Closifi pipeline showing leads across four stages, a monthly capture meter, and six leads flagged as going cold.">
+      <div class="mock-top">
+        <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+        <span class="mock-title">app.closifi.app/crm/dashboard</span>
+        <div class="mock-tab-toggle">
+          <button type="button" class="mock-tab active" id="btnAppShot">App View</button>
+          <button type="button" class="mock-tab" id="btnPipeBreak">Pipeline View</button>
+        </div>
+      </div>
+      
+      <!-- REAL DASHBOARD SCREENSHOT VIEW -->
+      <div id="viewAppShot" class="mock-view">
+        <img src="/assets/dashboards.png" alt="Closifi CRM Dashboard Screenshot" class="screenshot-img" />
+      </div>
+
+      <!-- HTML PIPELINE BREAKDOWN VIEW -->
+      <div id="viewPipeBreak" class="mock-view" style="display:none">
+        <div class="cols">
+          <div>
+            <div class="col-h"><span>New</span><span>34</span></div>
+            <div class="card"><div class="card-n">A. Okonkwo</div><div class="card-c">Head of Ops</div></div>
+            <div class="card"><div class="card-n">M. Trevino</div><div class="card-c">VP Sales</div></div>
+            <div class="card"><div class="card-n">S. Adeyemi</div><div class="card-c">Founder</div></div>
+          </div>
+          <div>
+            <div class="col-h"><span>Following up</span><span>19</span></div>
+            <div class="card"><div class="card-n">R. Nakamura</div><div class="card-c">Step 2 of 5</div></div>
+            <div class="card"><div class="card-n">J. Bello</div><div class="card-c">Step 4 of 5</div></div>
+          </div>
+          <div>
+            <div class="col-h"><span>Replied</span><span>7</span></div>
+            <div class="card lit"><div class="card-n">D. Fairhurst</div><div class="card-c">Wants a call</div></div>
+            <div class="card"><div class="card-n">L. Moreau</div><div class="card-c">Asked pricing</div></div>
+          </div>
+          <div>
+            <div class="col-h"><span>Booked</span><span>3</span></div>
+            <div class="card lit"><div class="card-n">P. Iheanacho</div><div class="card-c">Thu, 2:30 PM</div></div>
+          </div>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:24.8%"></div></div>
+        <div class="meter-note"><span>New leads added this month</span><span>1,240 / 5,000</span></div>
+        <div class="meter-note" style="border-top:0;padding-top:2px;margin-top:0"><span>Going cold — no contact in 21 days</span><span style="color:#C99B4E">6 leads</span></div>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- PERSONAS -->
-<section class="band-sm band-white">
+<section class="b-sm b-w">
   <div class="wrap">
-    <span class="eyebrow">Built for</span>
+    <span class="eyebrow">Who uses Closifi</span>
     <div class="pers">
-      <div class="pers-c"><h4>Sales teams</h4><p>Keep every rep's follow-up running whether or not they remember to send it.</p></div>
-      <div class="pers-c"><h4>Recruiters</h4><p>Source candidates from LinkedIn and stay in touch with the ones who said "not right now."</p></div>
-      <div class="pers-c"><h4>Agencies</h4><p>Run separate pipelines per client without separate logins or separate tools.</p></div>
-      <div class="pers-c"><h4>Consultants</h4><p>Work a small list properly instead of a big list badly.</p></div>
+      <div class="pers-c"><h4>Sales teams</h4><p>Every rep's follow-up goes out on time, whether they remember it or not.</p></div>
+      <div class="pers-c"><h4>Agencies</h4><p>Win new clients while you deliver for the ones you have.</p></div>
+      <div class="pers-c"><h4>Recruiters</h4><p>Stay in touch with the strong candidates who said "not right now."</p></div>
+      <div class="pers-c"><h4>Consultants &amp; coaches</h4><p>Work a small list properly instead of a big list badly.</p></div>
     </div>
   </div>
 </section>
 
-<!-- THE LEAK -->
-<section class="band" id="leak">
+<section class="b" id="problem">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Where it goes wrong</span>
-      <h2>Finding them was the hard part. Forgetting them is the expensive part.</h2>
-      <p>Nobody decides to abandon a lead. Reps get busy, the reminder slides, and a month later that name is dead weight in a spreadsheet. Here are the four places it happens.</p>
+    <div class="hd narrow c">
+      <span class="eyebrow">The real problem</span>
+      <h2>You're losing customers you already paid to find.</h2>
+      <p>Getting a lead costs you money and time. Every one that goes cold is that money wasted — and it happens in four predictable places.</p>
     </div>
-    <div class="grid4">
-      <div class="gcell"><span class="num">LEAK 01</span><h3>Captured, never entered</h3><p>A rep finds ten good prospects on LinkedIn, saves them to a doc, and means to add them to the CRM later. Later doesn't come.</p></div>
-      <div class="gcell"><span class="num">LEAK 02</span><h3>Contacted twice, then dropped</h3><p>Most replies arrive after the fourth or fifth touch. Most reps stop at the second, because the follow-up lives in their memory instead of a system.</p></div>
-      <div class="gcell"><span class="num">LEAK 03</span><h3>Replied, nobody noticed</h3><p>The answer lands in a different inbox from the tool that sent the message. By the time someone spots it, the prospect has moved on.</p></div>
-      <div class="gcell"><span class="num">LEAK 04</span><h3>Interested, never booked</h3><p>"Sounds good, send me some times." Four emails later, the calendar tennis has killed whatever momentum there was.</p></div>
+
+    <div class="cost">
+      <div class="cc">
+        <span class="cc-n">LEAK 01</span>
+        <h3>Leads you never write down</h3>
+        <p>You find ten good prospects, save them to a document, and mean to add them properly later. Later never comes.</p>
+        <div class="cc-cost">Cost: every deal in that file</div>
+      </div>
+      <div class="cc">
+        <span class="cc-n">LEAK 02</span>
+        <h3>Follow-ups you never send</h3>
+        <p>Most people reply on the fourth or fifth message. Most sellers stop at the second, because the reminder lives in their head.</p>
+        <div class="cc-cost">Cost: most of your replies</div>
+      </div>
+      <div class="cc">
+        <span class="cc-n">LEAK 03</span>
+        <h3>Replies nobody spots in time</h3>
+        <p>The answer lands in a different inbox from the tool that sent the message. By the time you see it, they've moved on.</p>
+        <div class="cc-cost">Cost: your warmest leads</div>
+      </div>
+      <div class="cc">
+        <span class="cc-n">LEAK 04</span>
+        <h3>Meetings that never get booked</h3>
+        <p>"Sounds good, send me some times." Four emails later, the momentum is gone and so is the deal.</p>
+        <div class="cc-cost">Cost: the ones who said yes</div>
+      </div>
+    </div>
+
+    <p class="c" style="max-width:640px;margin:34px auto 0;font-size:19px;font-weight:600">Closifi closes all four. That's the whole job.</p>
+  </div>
+</section>
+
+<section class="b b-i">
+  <div class="wrap">
+    <div class="hd narrow c">
+      <span class="eyebrow eyebrow-l">What you get out of it</span>
+      <h2>What this actually does for your business.</h2>
+    </div>
+    <div class="bene">
+      <div class="bn">
+        <div class="bn-ic">📈</div>
+        <h3>More meetings from the same leads</h3>
+        <p>You don't need a bigger list. You need every lead on the list contacted five times instead of once. Closifi does the other four.</p>
+      </div>
+      <div class="bn">
+        <div class="bn-ic">⏱</div>
+        <h3>Hours back every week</h3>
+        <p>No more searching your inbox to remember what somebody asked for. No more manually sending the same follow-up forty times.</p>
+      </div>
+      <div class="bn">
+        <div class="bn-ic">💷</div>
+        <h3>One bill instead of four</h3>
+        <p>A CRM, a sequencer, a dialler and a scraper cost around $232 per person per month. Closifi replaces all four from $39.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="band band-white" id="how">
+<section class="b b-w" id="how">
   <div class="wrap">
-    <div class="head">
+    <div class="hd narrow c">
       <span class="eyebrow">How it works</span>
-      <h2>Every lead follows the same path. Automatically.</h2>
-      <p>This is the real order a prospect moves through Closifi. Each step hands off to the next on its own — no exporting, no copy-paste, no relying on anyone to remember.</p>
+      <h2>From signing up to closing the deal.</h2>
+      <p>Every step, in order. The first four take about twenty minutes. After that, Closifi does the work.</p>
     </div>
 
-    <div class="split">
-      <div class="split-txt">
-        <span class="eyebrow">Steps 01 &amp; 02 — Capture and organize</span>
-        <h3>From a LinkedIn tab to a pipeline stage, in one click.</h3>
-        <p>The extension pulls the profile you're already looking at straight into a pipeline with your stages and your tags. No document in between, and no duplicate if you've saved them before.</p>
-        <ul>
-          <li>Chrome extension capture, bulk import or API</li>
-          <li>Custom stages for sales, recruiting or consulting</li>
-          <li>Lists that refresh themselves as leads change</li>
-          <li>Email finding, notes and full activity history</li>
-        </ul>
+    <div class="jrn">
+      <div class="jst">
+        <div class="jnum">1</div>
+        <div class="jbody">
+          <span class="jtime">2 minutes · you do this</span>
+          <h3>Sign up and pick your setup</h3>
+          <p>Enter your email, no card needed. Closifi asks what kind of business you run — sales, agency, recruiting, consulting — and builds your pipeline stages to match. Change any of them later.</p>
+        </div>
       </div>
-      <div class="mock mock-light">
-        <div class="mock-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="mock-title">app.closifi.app/crm/leads</span></div>
-        <img src="/assets/leads-details.png" alt="Closifi Leads and Pipeline View" class="screenshot-img" />
+      <div class="jst">
+        <div class="jnum">2</div>
+        <div class="jbody">
+          <span class="jtime">1 minute · you do this</span>
+          <h3>Install the Chrome extension</h3>
+          <p>One click from the Chrome store. This is the piece you'll use every day — it puts a "save to Closifi" button on every LinkedIn profile you open.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="split flip">
-      <div class="split-txt">
-        <span class="eyebrow">Steps 03 &amp; 04 — Reach and close</span>
-        <h3>Replies arrive sorted, not scattered.</h3>
-        <p>Every response lands next to the sequence that produced it, labelled by what the person actually said. The buying signals sit at the top, the polite brush-offs sort themselves out of your way, and the sequence stops on its own.</p>
-        <ul>
-          <li>Email, SMS and call tasks in one sequence</li>
-          <li>Replies labelled by intent, high signal first</li>
-          <li>Browser calling with notes, logs and recording</li>
-          <li>Booking links so prospects pick their own slot</li>
-        </ul>
+      <div class="jst">
+        <div class="jnum">3</div>
+        <div class="jbody">
+          <span class="jtime">10 minutes · you do this</span>
+          <h3>Bring in the leads you already have</h3>
+          <p>Upload your spreadsheet, your old CRM export, whatever your leads are sitting in. Closifi removes duplicates and fills in missing details. Then start capturing new prospects from LinkedIn in one click each.</p>
+        </div>
       </div>
-      <div class="mock mock-light">
-        <div class="mock-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="mock-title">Replies — 12 new</span></div>
-        <div class="msg"><div class="av">DF</div><div class="msg-b"><div class="msg-n"><span>Dara Fairhurst</span><span class="pill pill-hot">Ready to talk</span></div><div class="msg-t">"What does this look like for a team of six?"</div></div></div>
-        <div class="msg"><div class="av">LM</div><div class="msg-b"><div class="msg-n"><span>Léa Moreau</span><span class="pill pill-hot">Asked pricing</span></div><div class="msg-t">"Can you send over the plans? Reviewing this quarter."</div></div></div>
-        <div class="msg"><div class="av">RN</div><div class="msg-b"><div class="msg-n"><span>Rin Nakamura</span><span class="pill pill-warm">Later</span></div><div class="msg-t">"Not right now — try me after March."</div></div></div>
-        <div class="msg"><div class="av">JB</div><div class="msg-b"><div class="msg-n"><span>Jide Bello</span><span class="pill pill-cold">Not a fit</span></div><div class="msg-t">"We already have something in place, thanks."</div></div></div>
-        <div class="seq-stop" style="background:var(--brass-soft);color:#8A5F1E">Rin's sequence paused and rescheduled for March. Nobody had to remember.</div>
+      <div class="jst">
+        <div class="jnum">4</div>
+        <div class="jbody">
+          <span class="jtime">5 minutes · you do this</span>
+          <h3>Connect your email and build your first campaign</h3>
+          <p>Connect Gmail, Outlook or your own SMTP. Then write your first message — or let the AI draft it from a description of who you're writing to — and pick which list it goes to.</p>
+        </div>
+      </div>
+      <div class="jst">
+        <div class="jnum">5</div>
+        <div class="jbody">
+          <span class="jtime">Ongoing · Closifi does this</span>
+          <h3>Your follow-up runs on its own</h3>
+          <p>Set the cadence once — email on day 1, a nudge on day 3, a text on day 6, a call task on day 9 — and every lead walks through it automatically. The moment someone replies, their sequence stops, so nobody gets chased after they've answered.</p>
+          <p style="margin-top:11px">Leads also move themselves between campaigns based on what they do. Click your pricing link and they jump into your closing sequence. Ignore three emails and they drop to a slower nurture instead of getting burned out.</p>
+        </div>
+      </div>
+      <div class="jst">
+        <div class="jnum">6</div>
+        <div class="jbody">
+          <span class="jtime">Ongoing · Closifi does this</span>
+          <h3>Replies arrive already sorted</h3>
+          <p>Every response gets read and labelled — ready to talk, asked about price, try later, not interested. The people worth your morning sit at the top. The rest sort themselves out of your way.</p>
+        </div>
+      </div>
+      <div class="jst win">
+        <div class="jnum">7</div>
+        <div class="jbody">
+          <span class="jtime">The result</span>
+          <h3>They book a call in your calendar</h3>
+          <p>Interested prospects click your booking link and pick a slot that's actually free. No back-and-forth about times, no lost momentum, no double bookings.</p>
+        </div>
+      </div>
+      <div class="jst win">
+        <div class="jnum">8</div>
+        <div class="jbody">
+          <span class="jtime">The result</span>
+          <h3>You take the call and close the deal</h3>
+          <p>Dial straight from their record in your browser, with every email, note and reply already in front of you. Record the call, add your notes, move them to Won — and Closifi keeps working on everybody else.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STACK -->
-<section class="band">
+<section class="b">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Why it keeps happening</span>
-      <h2>Four tools means four places to lose a lead.</h2>
-      <p>Every tool in a typical outbound stack is good at its own job. The damage happens in the handoffs between them.</p>
+    <div class="hd narrow c">
+      <span class="eyebrow">See it working</span>
+      <h2>What your sequences and replies look like.</h2>
     </div>
-    <div class="swap">
-      <div class="sbox">
-        <div class="slab">A typical stack</div>
-        <div class="tool strike"><b>CRM</b><span>$49/user</span></div>
-        <div class="tool strike"><b>Email sequencer</b><span>$79/user</span></div>
-        <div class="tool strike"><b>Dialer</b><span>$65/user</span></div>
-        <div class="tool strike"><b>LinkedIn scraper</b><span>$39/user</span></div>
-        <div class="tool-tot"><span>Four subscriptions, four sync problems</span><span>$232</span></div>
+
+    <!-- SHOWCASE REAL APP SCREENSHOT -->
+    <div class="mock mock-light" style="margin-bottom:32px">
+      <div class="mock-top">
+        <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+        <span class="mock-title">app.closifi.app/crm/leads/details</span>
       </div>
-      <div class="arrow" aria-hidden="true">→</div>
-      <div class="sbox now">
-        <div class="slab">With Closifi</div>
-        <div class="tool"><b>Capture lands in the pipeline</b><span>one click</span></div>
-        <div class="tool"><b>Follow-up runs without reminders</b><span>automatic</span></div>
-        <div class="tool"><b>Replies sit beside the sequence</b><span>sorted by intent</span></div>
-        <div class="tool"><b>Prospects book their own slot</b><span>no back-and-forth</span></div>
-        <div class="tool-tot"><span>One system, per user</span><span>from $39</span></div>
+      <img src="/assets/leads-details.png" alt="Closifi Lead Details Interface" class="screenshot-img" />
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start" class="mockpair">
+      <div class="mock mock-light">
+        <div class="mock-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="mock-title">Your follow-up, running by itself</span></div>
+        <div class="msg"><div class="av">1</div><div class="mb"><div class="mn"><span>Opening email</span><span class="pill pill-c">Day 0</span></div><div class="mt">Sends as soon as a lead enters the stage</div></div></div>
+        <div class="msg"><div class="av">2</div><div class="mb"><div class="mn"><span>Short nudge</span><span class="pill pill-c">Day 3</span></div><div class="mt">Replies onto the original email thread</div></div></div>
+        <div class="msg"><div class="av">3</div><div class="mb"><div class="mn"><span>Text message</span><span class="pill pill-c">Day 6</span></div><div class="mt">Only if they never opened the emails</div></div></div>
+        <div class="msg"><div class="av">4</div><div class="mb"><div class="mn"><span>Call task</span><span class="pill pill-b">Day 9</span></div><div class="mt">Added to your list for the morning</div></div></div>
+        <div class="note-line">Stops the second they reply, unsubscribe or opt out.</div>
+        <div class="note-line" style="background:var(--brass-soft);color:#8A5F1E;margin-top:7px">Clicked the pricing link on day 3 → moved straight into the closing campaign.</div>
+      </div>
+
+      <div class="mock mock-light">
+        <div class="mock-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="mock-title">Your replies, already sorted</span></div>
+        <div class="msg"><div class="av">DF</div><div class="mb"><div class="mn"><span>Dara Fairhurst</span><span class="pill pill-a">Ready to talk</span></div><div class="mt">"What does this look like for a team of six?"</div></div></div>
+        <div class="msg"><div class="av">LM</div><div class="mb"><div class="mn"><span>Léa Moreau</span><span class="pill pill-a">Asked pricing</span></div><div class="mt">"Can you send the plans? Reviewing this quarter."</div></div></div>
+        <div class="msg"><div class="av">RN</div><div class="mb"><div class="mn"><span>Rin Nakamura</span><span class="pill pill-b">Try later</span></div><div class="mt">"Not right now — try me after March."</div></div></div>
+        <div class="msg"><div class="av">JB</div><div class="mb"><div class="mn"><span>Jide Bello</span><span class="pill pill-c">Not a fit</span></div><div class="mt">"We already have something, thanks."</div></div></div>
+        <div class="note-line">Rin's sequence paused itself and rescheduled. Nobody had to remember.</div>
       </div>
     </div>
-    <p style="margin-top:20px;font-size:14px;color:var(--slate);max-width:780px">Comparison prices are typical published list prices for popular tools in each category, shown for illustration. Your own stack will differ — put your real numbers in before you decide.</p>
+    <style>@media(max-width:880px){.mockpair{grid-template-columns:1fr!important}}</style>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="band band-pine" id="pricing">
+<section class="b b-w" id="features">
   <div class="wrap">
-    <div class="head head-c">
+    <div class="hd narrow c">
+      <span class="eyebrow">Every feature</span>
+      <h2>Everything Closifi does, and what it does for you.</h2>
+      <p>Four tools' worth of features in one login. Here's the full list.</p>
+    </div>
+
+    <div class="fgroup">
+      <div class="fgroup-h"><h3>Finding &amp; capturing leads</h3><span>Get prospects into your pipeline in seconds</span></div>
+      <div class="fgrid">
+        <div class="fc"><div class="fc-ic">🔗</div><h4>LinkedIn capture extension</h4><p>Open any profile, click once, and they're saved with their name, role, company and profile link already filled in. No copying and pasting.</p></div>
+        <div class="fc"><div class="fc-ic">📥</div><h4>Bulk import</h4><p>Upload a spreadsheet or CRM export and bring your whole existing list across in one go, cleaned and mapped for you.</p></div>
+        <div class="fc"><div class="fc-ic">✉️</div><h4>Email finder</h4><p>Find and verify work email addresses for the prospects you've saved, so your messages actually reach a real inbox.</p></div>
+        <div class="fc"><div class="fc-ic">🔍</div><h4>Duplicate detection</h4><p>If you save someone you already have, Closifi merges them instead of creating a second record. No more contacting the same person twice.</p></div>
+        <div class="fc"><div class="fc-ic">🏷️</div><h4>Lead enrichment</h4><p>Fills in company, job title, location, website and industry automatically so you know who you're talking to before you write.</p></div>
+        <div class="fc"><div class="fc-ic">⚙️</div><h4>API access</h4><p>Push leads into Closifi from your website forms, ads or any other tool you already use.</p><span class="tierlab">Enterprise</span></div>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <div class="fgroup-h"><h3>Organising your pipeline</h3><span>Always know where every deal stands</span></div>
+      <div class="fgrid">
+        <div class="fc"><div class="fc-ic">📊</div><h4>Unlimited pipelines</h4><p>Run a separate pipeline for each service, market or client, all from the same login.</p></div>
+        <div class="fc"><div class="fc-ic">🪜</div><h4>Custom stages</h4><p>Name your own stages to match how you actually sell, instead of bending your process to fit someone else's software.</p></div>
+        <div class="fc"><div class="fc-ic">🕓</div><h4>Full lead timeline</h4><p>Every email, call, note and stage change on one screen. Never search your inbox to remember a conversation again.</p></div>
+        <div class="fc"><div class="fc-ic">📝</div><h4>Notes &amp; tags</h4><p>Record what was said and label leads however you like, so you can find any group of them in seconds.</p></div>
+        <div class="fc"><div class="fc-ic">🎯</div><h4>Lead scoring</h4><p>See which prospects are engaging most, so your time goes to the people most likely to buy.</p></div>
+        <div class="fc"><div class="fc-ic">📋</div><h4>Static lists</h4><p>Build a fixed list of prospects for a specific campaign and send to exactly that group.</p></div>
+        <div class="fc"><div class="fc-ic">🔄</div><h4>Dynamic lists</h4><p>Lists that rebuild themselves as leads change — "everyone in London who opened but didn't reply" stays accurate on its own.</p><span class="tierlab">Growth &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">🚦</div><h4>Stage probabilities</h4><p>Attach a likelihood to each stage and see what your pipeline is realistically worth this month.</p></div>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <div class="fgroup-h"><h3>Reaching out &amp; following up</h3><span>The part that runs without you</span></div>
+      <div class="fgrid">
+        <div class="fc"><div class="fc-ic">📧</div><h4>Email campaigns</h4><p>Write once, pick a list, send. Track who opened, who clicked and who replied.</p></div>
+        <div class="fc"><div class="fc-ic">🔁</div><h4>Automated sequences</h4><p>Build a five-touch follow-up once and every new lead walks through it automatically. This is where most of your meetings will come from.</p><span class="tierlab">Growth &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">🛑</div><h4>Stops on reply</h4><p>The moment someone answers, unsubscribes or opts out, their sequence halts. Nobody ever gets chased after saying yes.</p><span class="tierlab">Growth &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">⚡</div><h4>Automatic enrolment</h4><p>Leads drop into the right sequence on their own when they hit a stage or get a tag. You never enrol anyone by hand.</p><span class="tierlab">Growth &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">🔀</div><h4>Leads move themselves between campaigns</h4><p>Set the rules once and every lead routes itself based on what it actually does. Click your pricing link and they drop into your closing campaign. Reply and they move to a different follow-up. Ignore three emails and they shift to a slower nurture instead of being burned out.</p><span class="tierlab">Growth &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">🌿</div><h4>Different paths for different behaviour</h4><p>Opened but didn't reply? Send a different angle. Never opened at all? Change the subject line and try again. Opened four times? Get them on a call. The sequence decides, not you.</p><span class="tierlab">Pro &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">🤖</div><h4>AI email writing</h4><p>Describe who you're writing to and get a full sequence back in your voice. Rewrite any message that isn't landing.</p><span class="tierlab">Growth &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">💬</div><h4>SMS sequences</h4><p>Add a text message as a step. Texts get read in minutes and reach the people who never open email.</p><span class="tierlab">Pro &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">📄</div><h4>Template library</h4><p>Save your best-performing messages and reuse them across campaigns instead of rewriting from scratch.</p></div>
+        <div class="fc"><div class="fc-ic">🚫</div><h4>Unsubscribe handling</h4><p>One-click opt-out on every message, handled automatically, so you stay on the right side of the rules.</p></div>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <div class="fgroup-h"><h3>Closing the deal</h3><span>Turn replies into calls, and calls into customers</span></div>
+      <div class="fgrid">
+        <div class="fc"><div class="fc-ic">🧠</div><h4>Replies sorted by intent</h4><p>Every response labelled — ready to talk, asked about price, try later, not a fit — so your best leads are at the top of the list.</p><span class="tierlab">Pro &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">📞</div><h4>Call from your browser</h4><p>Dial straight from a lead's record with their whole history in front of you. No switching to your phone.</p><span class="tierlab">Pro &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">🎙️</div><h4>Call recording &amp; notes</h4><p>Every call recorded and logged on the lead's timeline, so nothing said on a call gets forgotten.</p><span class="tierlab">Pro &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">📅</div><h4>Booking links</h4><p>Send a link and let prospects pick a slot that's genuinely free. Ends the back-and-forth that kills momentum.</p></div>
+        <div class="fc"><div class="fc-ic">🗓️</div><h4>Meeting scheduler</h4><p>See and manage every booked call in one place, with reminders that cut no-shows.</p></div>
+        <div class="fc"><div class="fc-ic">↪️</div><h4>Buying signals get fast-tracked</h4><p>When a reply is read as high intent, that lead leaves the cold campaign and enters your closing sequence immediately — no waiting for you to spot it.</p><span class="tierlab">Pro &amp; up</span></div>
+      </div>
+    </div>
+
+    <div class="fgroup">
+      <div class="fgroup-h"><h3>Reporting &amp; your team</h3><span>Know what's working and who's doing it</span></div>
+      <div class="fgrid">
+        <div class="fc"><div class="fc-ic">📈</div><h4>Pipeline dashboard</h4><p>See how many leads you have, where they are and what's moving, without building a spreadsheet.</p></div>
+        <div class="fc"><div class="fc-ic">📬</div><h4>Campaign reporting</h4><p>Sent, delivered, opened, clicked, replied and bounced for every campaign — so you know which message to send more of.</p></div>
+        <div class="fc"><div class="fc-ic">📶</div><h4>Sequence performance</h4><p>See which step in your follow-up produces the replies, and cut the ones that don't.</p><span class="tierlab">Growth &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">☎️</div><h4>Call reporting</h4><p>Calls made, connected and their outcomes, per rep and per period.</p><span class="tierlab">Pro &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">👥</div><h4>Team roles &amp; permissions</h4><p>Give each person their own login, their own leads and the right level of access.</p><span class="tierlab">Pro &amp; up</span></div>
+        <div class="fc"><div class="fc-ic">📤</div><h4>Export anything</h4><p>Download your leads, history and results to CSV whenever you want. Your data stays yours.</p></div>
+      </div>
+    </div>
+
+    <p class="c" style="margin-top:34px;font-size:15px;color:var(--slate)">WhatsApp sequences are on the roadmap and will be included free when they ship.</p>
+  </div>
+</section>
+
+<section class="b b-p" id="pricing">
+  <div class="wrap">
+    <div class="hd narrow c">
       <span class="eyebrow">Pricing</span>
-      <h2>Your exact cost, in ten seconds.</h2>
-      <p>Move the slider and pick a plan. What you see is what you pay — no setup fee, no onboarding fee, no per-contact charge waiting in the small print.</p>
+      <h2>One closed deal pays for a year of Closifi.</h2>
+      <p>See exactly what you'll pay in ten seconds. No setup fees, no hidden charges, no contract you can't get out of.</p>
     </div>
 
     <div class="calc">
       <div class="calc-l">
         <div class="field">
-          <span class="field-lab" id="lab-plan">Plan</span>
+          <span class="field-lab" id="lab-plan">Choose a plan</span>
           <div class="seg" role="group" aria-labelledby="lab-plan">
             <button type="button" data-plan="starter" aria-pressed="false">Starter</button>
             <button type="button" data-plan="growth" aria-pressed="true">Growth</button>
@@ -194,205 +390,206 @@
           </div>
         </div>
         <div class="field">
-          <span class="field-lab" id="lab-billing">Billing</span>
+          <span class="field-lab" id="lab-billing">How you want to pay</span>
           <div class="seg" role="group" aria-labelledby="lab-billing">
-            <button type="button" data-bill="annual" aria-pressed="true">Annual <span class="save-tag">save 18%</span></button>
+            <button type="button" data-bill="annual" aria-pressed="true">Yearly <span class="save-tag">save 18%</span></button>
             <button type="button" data-bill="monthly" aria-pressed="false">Monthly</button>
           </div>
         </div>
         <div class="field" style="margin-bottom:6px">
-          <span class="field-lab"><label for="seats">Team size</label></span>
-          <div class="seat-row"><span class="seat-num" id="seatN">5</span><span class="seat-word" id="seatW">people on the team</span></div>
+          <span class="field-lab"><label for="seats">How many people on your team</label></span>
+          <div class="seat-row"><span class="seat-num" id="seatN">5</span><span class="seat-word" id="seatW">people</span></div>
           <input type="range" id="seats" min="1" max="30" value="5" aria-describedby="seatW">
         </div>
       </div>
       <div class="calc-r">
-        <span class="eyebrow eyebrow-light" style="margin-bottom:12px">Your total</span>
-        <div class="price-big" id="total">$445</div>
-        <div class="price-sub" id="totalSub">per month, billed annually</div>
-        <div class="price-per" id="perSeat">$89 per person, per month</div>
-        <div class="inc">
-          <div class="inc-row"><span>New leads per month</span><b id="capT">25,000</b></div>
-          <div class="inc-row"><span>Leads stored</span><b id="stoT">150,000</b></div>
-          <div class="inc-row"><span>AI drafts per month</span><b id="aiT">2,500</b></div>
-          <div class="inc-row"><span>Free migration import</span><b id="migT">20,000</b></div>
+        <div>
+          <span class="eyebrow eyebrow-l" style="margin-bottom:12px">You'll pay</span>
+          <div class="price-big" id="total">$445</div>
+          <div class="price-sub" id="totalSub">a month, billed yearly</div>
+          <div class="price-per" id="perSeat">$89 per person, per month</div>
+          <div class="inc">
+            <div class="inc-row"><span>New leads you can add each month</span><b id="capT">25,000</b></div>
+            <div class="inc-row"><span>Leads you can store</span><b id="stoT">150,000</b></div>
+            <div class="inc-row"><span>AI-written emails a month</span><b id="aiT">2,500</b></div>
+            <div class="inc-row"><span>Free import of your existing list</span><b id="migT">20,000</b></div>
+          </div>
         </div>
-        <a href="https://app.closifi.app/signup" class="btn btn-primary btn-block" style="margin-top:26px">Start free trial</a>
+        <a href="#start" class="btn btn-primary btn-block" style="margin-top:26px">Start free trial</a>
       </div>
     </div>
 
     <div class="tiers">
       <div class="tier">
         <h3>Starter</h3>
-        <div class="tier-for">For founders and small teams whose CRM is currently a spreadsheet.</div>
+        <div class="tier-for">Get organised and stop losing leads in spreadsheets.</div>
         <div class="tier-p">$39<small>/user/mo</small></div>
-        <div class="tier-bill">billed annually · $49 monthly</div>
+        <div class="tier-bill">billed yearly · $49 monthly</div>
         <ul>
-          <li><b>2,000</b> new leads per user, monthly</li>
+          <li><b>2,000</b> new leads per person, monthly</li>
           <li><b>25,000</b> leads stored, +10,000 per extra seat</li>
           <li>Full CRM with one pipeline</li>
-          <li>Chrome capture extension</li>
+          <li>LinkedIn capture extension</li>
           <li>Email campaigns and templates</li>
-          <li>Static lists and lead analytics</li>
+          <li>Booking links and scheduler</li>
         </ul>
-        <a href="https://app.closifi.app/signup?plan=starter" class="btn btn-outline btn-block">Start free trial</a>
+        <a href="#start" class="btn btn-outline btn-block">Start free trial</a>
       </div>
       <div class="tier hi">
-        <span class="tier-flag">Most teams start here</span>
+        <span class="tier-flag">Most popular</span>
         <h3>Growth</h3>
-        <div class="tier-for">For teams who want the fifth follow-up to actually go out.</div>
+        <div class="tier-for">Put your follow-up on autopilot and book more meetings.</div>
         <div class="tier-p">$89<small>/user/mo</small></div>
-        <div class="tier-bill">billed annually · $109 monthly</div>
+        <div class="tier-bill">billed yearly · $109 monthly</div>
         <ul>
-          <li><b>5,000</b> new leads per user, monthly</li>
+          <li><b>5,000</b> new leads per person, monthly</li>
           <li><b>50,000</b> leads stored, +25,000 per extra seat</li>
           <li>Unlimited pipelines and sequences</li>
-          <li>Dynamic lists that update themselves</li>
-          <li>AI drafting — 500 per user, monthly</li>
-          <li>Email finding and meeting scheduler</li>
+          <li>Automated follow-up that stops on reply</li>
+          <li>Leads move between campaigns on their own</li>
+          <li>AI email writing — 500 per person</li>
+          <li>Dynamic lists and email finder</li>
         </ul>
-        <a href="https://app.closifi.app/signup?plan=growth" class="btn btn-dark btn-block">Start free trial</a>
+        <a href="#start" class="btn btn-dark btn-block">Start free trial</a>
       </div>
       <div class="tier">
         <h3>Pro</h3>
-        <div class="tier-for">For teams working prospects by email, message and phone at once.</div>
+        <div class="tier-for">Reach people by text and phone, not just email.</div>
         <div class="tier-p">$169<small>/user/mo</small></div>
-        <div class="tier-bill">billed annually · $199 monthly</div>
+        <div class="tier-bill">billed yearly · $199 monthly</div>
         <ul>
-          <li><b>10,000</b> new leads per user, monthly</li>
+          <li><b>10,000</b> new leads per person, monthly</li>
           <li><b>100,000</b> leads stored, +50,000 per extra seat</li>
           <li>SMS sequences and call tasks</li>
-          <li>Browser calling, recording and logs</li>
+          <li>Calling from your browser, with recording</li>
           <li>Replies sorted by buying intent</li>
           <li>Team roles and permissions</li>
-          <li style="color:#7C8983">WhatsApp — on the roadmap, free when it ships</li>
         </ul>
-        <a href="https://app.closifi.app/signup?plan=pro" class="btn btn-outline btn-block">Start free trial</a>
+        <a href="#start" class="btn btn-outline btn-block">Start free trial</a>
       </div>
       <div class="tier">
         <h3>Enterprise</h3>
-        <div class="tier-for">For larger teams with volume, governance and integration requirements.</div>
+        <div class="tier-for">Built around your volume, your rules and your systems.</div>
         <div class="tier-p">Custom</div>
-        <div class="tier-bill">annual agreement</div>
+        <div class="tier-bill">yearly agreement</div>
         <ul>
-          <li>Volume set to your numbers</li>
-          <li>Unlimited migration import</li>
+          <li>Limits set to your numbers</li>
+          <li>Unlimited import of your existing data</li>
           <li>Admin controls and access roles</li>
           <li>API access and custom integrations</li>
-          <li>Named account manager</li>
+          <li>A named account manager</li>
           <li>Support response commitments</li>
         </ul>
-        <a href="https://app.closifi.app/signup?plan=enterprise" class="btn btn-outline btn-block">Talk to us</a>
+        <a href="#start" class="btn btn-outline btn-block">Talk to us</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STRAIGHT ANSWERS / OBJECTIONS -->
-<section class="band" id="answers">
+<section class="b-sm b-w">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Straight answers</span>
-      <h2>The awkward questions, answered before you ask.</h2>
-      <p>You are going to compare us against cheaper tools. Here is where we are genuinely different, and where we are genuinely not the right choice.</p>
-    </div>
-    <div class="obj">
-      <div class="obj-c">
-        <div class="obj-q">Why per user, when other tools charge one flat fee?</div>
-        <p>Because the tools charging one flat fee are sending tools. You pay for volume, everyone shares one login, and there is no record of who owns which relationship.</p>
-        <p>Closifi holds the relationship, not just the send. Each person gets their own prospect list, their own call log, their own permissions and their own history on every lead. If all you need is to blast email from a shared account, a flat-fee sending tool will be cheaper — and you should buy that instead.</p>
-      </div>
-      <div class="obj-c">
-        <div class="obj-q">Other tools say "unlimited leads". Why do you have a limit?</div>
-        <p>Storage is cheap and we treat it that way: your allowance grows with every seat, archived and unsubscribed leads never count, and more can be added for $10 a month per 25,000.</p>
-        <p>What we meter is new leads added each month, because that tracks the work the system actually does for you. We would rather show you a number you can see and manage than advertise "unlimited" and enforce it quietly through a fair use policy.</p>
-      </div>
-      <div class="obj-c">
-        <div class="obj-q">What happens when I hit a limit?</div>
-        <p>Nothing dramatic. You get a warning at 80% and 90% with a breakdown of what is using your allowance. At the limit, new leads pause — nothing is deleted, nothing is locked, and your sequences keep running.</p>
-        <p>Then you choose: archive cold leads for free, add capacity, or move up a plan. The free option is always shown first.</p>
-      </div>
-      <div class="obj-c">
-        <div class="obj-q">Where do the leads actually come from?</div>
-        <p>From you. Closifi generates leads by capturing them — one click from a LinkedIn profile, a bulk import, or the API — and then finds and verifies the email address. What it isn't is a database you buy access to and search through.</p>
-        <p>If you want to filter 200 million contacts by job title, buy a data provider. If you want the prospects you've picked yourself worked properly and never dropped, that's this.</p>
+    <div class="ph">
+      <span class="eyebrow">Placeholder — replace before launch</span>
+      <p><strong>Customer results and quotes go here.</strong> Three named customers with one hard number each — meetings booked, reply rate, hours saved. Ask your first ten customers for a metric and permission to use their name. Until you have them, delete this section rather than filling it with estimates.</p>
+      <div class="ph-grid">
+        <div class="ph-card"><div class="qm">00%</div><p>[Result metric]</p><div class="who">[Name, role, company]</div></div>
+        <div class="ph-card"><div class="qm">00x</div><p>[Result metric]</p><div class="who">[Name, role, company]</div></div>
+        <div class="ph-card"><div class="qm">&ldquo;</div><p>[Quote about a specific outcome]</p><div class="who">[Name, role, company]</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECURITY -->
-<section class="band band-ink">
+<section class="b" id="faq">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow eyebrow-light">Your data</span>
-      <h2>Your list is your business. We treat it that way.</h2>
-      <p>Four commitments that hold on every plan, including the free trial.</p>
-    </div>
-    <div class="sec">
-      <div class="sec-c"><h3>You can always leave</h3><p>Export leads, activity history and campaign results to CSV yourself, any time, without asking us. Exports are never withheld during a cancellation.</p></div>
-      <div class="sec-c"><h3>We don't resell your data</h3><p>Your leads are not pooled into a shared database, sold on, or used to enrich anyone else's prospecting. What you capture stays yours.</p></div>
-      <div class="sec-c"><h3>Deletion means deletion</h3><p>Close your account and your data is removed on a published schedule, not held indefinitely. Ask for confirmation and you'll get it in writing.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="band" id="faq">
-  <div class="wrap">
-    <div class="head head-c"><span class="eyebrow">Questions</span><h2>The things buyers ask us first.</h2></div>
+    <div class="hd narrow c"><span class="eyebrow">Questions</span><h2>Everything buyers ask us.</h2></div>
     <div class="faq">
+
+      <span class="faq-group">Getting started</span>
       <details open>
-        <summary>What exactly counts as a "new lead"?</summary>
-        <p>Any person added to your workspace who wasn't there before — from the Chrome extension, a CSV import, the API, or typed in by hand. Every source counts the same way. Updating, enriching or re-syncing someone you already have doesn't count, and neither does a duplicate.</p>
-      </details>
-      <details>
-        <summary>How does Closifi compare to a cold email tool?</summary>
-        <p>A cold email tool is built to send at volume and get into the inbox. Closifi is built to work a prospect all the way to a booked meeting — who owns them, what stage they're at, what was said on the call, when to try again. Sending is one part of that rather than the whole product.</p>
-        <p>Plenty of teams run both. If you only need sending, buy the sending tool.</p>
-      </details>
-      <details>
-        <summary>Am I locked into a contract?</summary>
-        <p>On monthly billing, no — cancel whenever you like and you won't be billed again. Annual plans run for the year you've paid for. Enterprise agreements are negotiated per contract. There's no cancellation fee on any plan and no penalty for downgrading.</p>
-      </details>
-      <details>
-        <summary>Can I get my data out?</summary>
-        <p>Yes, at any time, on every plan including the trial. Export leads, activity history and campaign results to CSV yourself from inside the product — you don't need to ask us, and exports aren't held back during a cancellation.</p>
-      </details>
-      <details>
-        <summary>How does the Chrome extension work with LinkedIn?</summary>
-        <p>It captures the profile details already visible to you on a page you're viewing and saves them to your CRM. It works at human pace and doesn't run bulk automated scraping in the background.</p>
-        <p>You're responsible for using it within LinkedIn's terms and your own local data protection rules. If you're unsure how that applies to you, check with your legal advisor before rolling it out across a team.</p>
-      </details>
-      <details>
-        <summary>Do I need Twilio to make calls?</summary>
-        <p>Calling on Pro and Enterprise runs through Twilio, and you connect your own account. Your numbers and call records stay yours, and you're billed at cost for the telephony plus Closifi's $0.02 per outbound minute. Twilio isn't needed for anything else in the product.</p>
-      </details>
-      <details>
-        <summary>Can we move our existing CRM data across?</summary>
-        <p>Yes. Every new workspace gets a free one-time migration import — 10,000 leads on Starter, 20,000 on Growth, 60,000 on Pro, and no cap on Enterprise. It doesn't touch your monthly allowance. If your data is messy or spread across several systems, we'll help you map it during onboarding.</p>
+        <summary>How long does setup actually take?</summary>
+        <p>About twenty minutes to be up and sending. Signing up takes two, the extension takes one, importing your existing leads takes around ten, and building your first campaign takes five.</p>
+        <p>If your data is messy or spread across a few systems, we'll help you map it — just ask.</p>
       </details>
       <details>
         <summary>What does the free trial include?</summary>
-        <p>Seven days, three seats and 250 lead captures — enough to import your leads, capture new ones and get a live sequence running. No card required, and nothing bills automatically when it ends.</p>
+        <p>Seven days, three seats and 250 leads, with no card needed and no automatic billing when it ends. Enough to import your list, capture new prospects and get a real campaign running.</p>
         <p>Seven days is tight for seeing replies come back, so if you're mid-test when it runs out, ask and we'll extend it.</p>
+      </details>
+      <details>
+        <summary>Can I move my existing leads across?</summary>
+        <p>Yes, and it's free. Every new account gets a one-time import — 10,000 leads on Starter, 20,000 on Growth, 60,000 on Pro, unlimited on Enterprise — and it doesn't count against your monthly allowance.</p>
+      </details>
+      <details>
+        <summary>Do I need my own email account?</summary>
+        <p>Yes, and it's better that way. Connect Gmail, Outlook or any SMTP account. Your sending runs on your own reputation, which means no shared-IP problems and no sending limits imposed by us.</p>
+      </details>
+
+      <span class="faq-group">How it compares</span>
+      <details>
+        <summary>Why do you charge per person when other tools charge one flat fee?</summary>
+        <p>Because the tools charging one flat fee are sending tools. You pay for volume, everyone shares one login, and there's no record of who owns which relationship.</p>
+        <p>Closifi holds the relationship, not just the send. Each person gets their own leads, their own call log, their own permissions and their own history. If all you need is to blast email from a shared account, a flat-fee sending tool will be cheaper — buy that instead.</p>
+      </details>
+      <details>
+        <summary>Other tools advertise "unlimited leads". Why do you have limits?</summary>
+        <p>Storage is cheap and we treat it that way — your allowance grows with every seat, archived and unsubscribed leads never count, and more can be added for $10 a month per 25,000.</p>
+        <p>What we count is new leads added each month, because that tracks the work the system does for you. We'd rather show you a number you can see and manage than advertise "unlimited" and enforce it quietly through a fair use policy.</p>
+      </details>
+      <details>
+        <summary>Where do the leads come from — do you have a database?</summary>
+        <p>No, and this matters. Closifi helps you generate leads by capturing them — one click from a LinkedIn profile, a bulk import, or the API — then finds and verifies their email address.</p>
+        <p>If you want to filter 200 million contacts by job title, buy a data provider. If you want the prospects you've chosen worked properly and never dropped, that's this.</p>
+      </details>
+      <details>
+        <summary>How is this different from a cold email tool?</summary>
+        <p>A cold email tool is built to send at volume. Closifi is built to work a prospect all the way to a booked meeting — who owns them, what stage they're at, what was said on the call, when to try again. Sending is one part of that, not the whole product.</p>
+      </details>
+
+      <span class="faq-group">Using it day to day</span>
+      <details>
+        <summary>What happens if I reach a limit?</summary>
+        <p>You get a warning at 80% and 90%, with a breakdown of what's using your allowance. If you do reach it, new leads pause — nothing is deleted, nothing is locked, and your campaigns keep running.</p>
+        <p>Then you choose: archive cold leads for free, add capacity, or move up a plan. The free option is always shown first.</p>
+      </details>
+      <details>
+        <summary>Does the LinkedIn extension break their rules?</summary>
+        <p>It captures details already visible to you on a page you're viewing, at human pace. It doesn't run bulk automated scraping in the background.</p>
+        <p>You're responsible for using it within LinkedIn's terms and your own data protection rules. If you're unsure how that applies to you, check with your legal advisor before rolling it out to a team.</p>
+      </details>
+      <details>
+        <summary>Do I need Twilio to make calls?</summary>
+        <p>Calling on Pro and Enterprise runs through Twilio and you connect your own account, so your numbers and call records stay yours. You're billed at cost for the telephony plus $0.02 per outbound minute. Twilio isn't needed for anything else.</p>
+      </details>
+
+      <span class="faq-group">Money and your data</span>
+      <details>
+        <summary>Am I locked into a contract?</summary>
+        <p>On monthly billing, no — cancel whenever you like and you won't be billed again. Yearly plans run for the year you've paid for. Enterprise agreements are negotiated per contract. There's no cancellation fee on any plan and no penalty for downgrading.</p>
+      </details>
+      <details>
+        <summary>Can I get my data out?</summary>
+        <p>Yes, any time, on every plan including the trial. Export your leads, history and campaign results to CSV yourself — you don't need to ask us, and exports aren't held back during a cancellation.</p>
+      </details>
+      <details>
+        <summary>Do you sell or share my leads?</summary>
+        <p>No. Your leads aren't pooled into a shared database, sold on, or used to enrich anybody else's prospecting. What you capture stays yours.</p>
       </details>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta" id="start">
   <div class="wrap cta-in">
-    <h2>Find out who you've been forgetting.</h2>
-    <p>Import your existing leads and Closifi will show you how many haven't been contacted in 30 days. For most teams, that number is the whole argument.</p>
-    <form class="signup" id="signupForm2" action="https://app.closifi.app/signup" method="GET">
+    <h2>See how many customers you're leaving behind.</h2>
+    <p>Import your leads and Closifi will show you how many haven't been contacted in 30 days. For most businesses, that number is the whole argument.</p>
+    <form class="signup" id="signupForm2">
       <label for="email2" style="position:absolute;left:-9999px">Work email</label>
       <input type="email" id="email2" name="email" placeholder="you@company.com" required autocomplete="email">
       <button type="submit" class="btn btn-primary">Start free trial</button>
     </form>
-    <p class="legal-line" style="margin:0 auto 18px;text-align:center">Seven days, three seats, 250 leads. No card required.</p>
-    <a href="https://app.closifi.app/signup" style="color:#9DBFAF;font-size:15.5px">Or book a 20-minute walkthrough →</a>
+    <p class="legal-line" style="margin:0 auto 18px;text-align:center">7 days free · 3 seats · no card needed</p>
+    <a href="#" style="color:#9DBFAF;font-size:15.5px">Or book a 20-minute walkthrough →</a>
   </div>
 </section>
 
@@ -404,25 +601,47 @@
           <svg class="logo-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21" rx="6" stroke="#7FBFA4" stroke-width="2"/><path d="M7 12.4l3.4 3.4L17.2 9" stroke="#B57F31" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Closifi
         </a>
-        <p class="f-blurb">Lead generation and automated outreach in one system — capture from LinkedIn, follow up by email and SMS, call from the browser and book the meeting.</p>
+        <p class="f-blurb">Get more leads, book more meetings and close more sales — from one system that does the chasing for you.</p>
       </div>
-      <div><h4>Product</h4><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#answers">Straight answers</a><a href="https://app.closifi.app/extension">Chrome extension</a></div>
-      <div><h4>Company</h4><a href="https://app.closifi.app/about">About</a><a href="https://app.closifi.app/contact">Contact</a><a href="https://app.closifi.app/status">Status</a></div>
-      <div><h4>Legal</h4><a href="https://app.closifi.app/privacy">Terms of service</a><a href="https://app.closifi.app/privacy">Privacy policy</a><a href="https://app.closifi.app/privacy">Data processing</a></div>
+      <div><h4>Product</h4><a href="#how">How it works</a><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#">Chrome extension</a></div>
+      <div><h4>Company</h4><a href="#">About</a><a href="#">Contact</a><a href="#">Careers</a><a href="#">Status</a></div>
+      <div><h4>Legal</h4><a href="#">Terms of service</a><a href="#">Privacy policy</a><a href="#">Data processing</a><a href="#">Acceptable use</a></div>
     </div>
     <div class="f-bot">
       <span>© 2026 Closifi. All rights reserved.</span>
+      <span>[Add registered company name, number and address here]</span>
     </div>
   </div>
 </footer>
 
 <div class="sticky">
   <span>7 days free · no card</span>
-  <a href="https://app.closifi.app/signup" class="btn btn-primary">Start free trial</a>
+  <a href="#start" class="btn btn-primary">Start free trial</a>
 </div>
 
 <script>
 (function(){
+  // Tab toggle in mock header
+  var btnAppShot = document.getElementById('btnAppShot');
+  var btnPipeBreak = document.getElementById('btnPipeBreak');
+  var viewAppShot = document.getElementById('viewAppShot');
+  var viewPipeBreak = document.getElementById('viewPipeBreak');
+
+  if(btnAppShot && btnPipeBreak && viewAppShot && viewPipeBreak){
+    btnAppShot.addEventListener('click', function(){
+      btnAppShot.classList.add('active');
+      btnPipeBreak.classList.remove('active');
+      viewAppShot.style.display = 'block';
+      viewPipeBreak.style.display = 'none';
+    });
+    btnPipeBreak.addEventListener('click', function(){
+      btnPipeBreak.classList.add('active');
+      btnAppShot.classList.remove('active');
+      viewPipeBreak.style.display = 'block';
+      viewAppShot.style.display = 'none';
+    });
+  }
+
   var PLANS={
     starter:{a:39,m:49,cap:2000,stoBase:25000,stoSeat:10000,ai:0,mig:10000},
     growth:{a:89,m:109,cap:5000,stoBase:50000,stoSeat:25000,ai:500,mig:20000},
@@ -434,10 +653,10 @@
   function render(){
     var p=PLANS[plan],rate=bill==='annual'?p.a:p.m;
     $('total').textContent='$'+fmt(rate*seats);
-    $('totalSub').textContent='per month, billed '+(bill==='annual'?'annually':'monthly');
+    $('totalSub').textContent='a month, billed '+(bill==='annual'?'yearly':'monthly');
     $('perSeat').textContent='$'+rate+' per person, per month';
     $('seatN').textContent=seats;
-    $('seatW').textContent=seats===1?'person on the team':'people on the team';
+    $('seatW').textContent=seats===1?'person':'people';
     $('capT').textContent=fmt(p.cap*seats);
     $('stoT').textContent=fmt(p.stoBase+(seats-1)*p.stoSeat);
     $('aiT').textContent=p.ai?fmt(p.ai*seats):'Not on Starter';
@@ -447,18 +666,22 @@
     document.querySelectorAll('[data-'+attr+']').forEach(function(b){
       b.addEventListener('click',function(){
         document.querySelectorAll('[data-'+attr+']').forEach(function(x){x.setAttribute('aria-pressed','false')});
-        b.setAttribute('aria-pressed','true');
-        set(b.getAttribute('data-'+attr));render();
+        b.setAttribute('aria-pressed','true');set(b.getAttribute('data-'+attr));render();
       });
     });
   }
   group('plan',function(v){plan=v});
   group('bill',function(v){bill=v});
-  var seatsEl = $('seats');
-  if(seatsEl){
-    seatsEl.addEventListener('input',function(e){seats=parseInt(e.target.value,10);render()});
-  }
+  $('seats').addEventListener('input',function(e){seats=parseInt(e.target.value,10);render()});
   render();
+  ['signupForm','signupForm2'].forEach(function(id){
+    var f=document.getElementById(id); if(!f)return;
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var i=f.querySelector('input[type=email]');
+      if(i&&i.value){f.innerHTML='<p style="color:#7FBFA4;font-size:16px;padding:12px 0">Thanks — connect this form to your signup flow to continue.</p>';}
+    });
+  });
 })();
 </script>
 </body>
