@@ -416,7 +416,7 @@
             <div class="inc-row"><span>Free import of your existing list</span><b id="migT">20,000</b></div>
           </div>
         </div>
-        <a href="/signup?source=direct&plan=growth" id="calcCta" class="btn btn-primary btn-block" style="margin-top:26px">Start 7-day free trial</a>
+        <a href="https://app.closifi.app/signup?source=direct&plan=growth" id="calcCta" class="btn btn-primary btn-block" style="margin-top:26px">Start 7-day free trial</a>
       </div>
     </div>
 
@@ -434,7 +434,7 @@
           <li>Email campaigns and templates</li>
           <li>Booking links and scheduler</li>
         </ul>
-        <a href="/signup?source=direct&plan=starter" class="btn btn-outline btn-block">Start 7-day free trial</a>
+        <a href="https://app.closifi.app/signup?source=direct&plan=starter" class="btn btn-outline btn-block">Start 7-day free trial</a>
       </div>
       <div class="tier hi">
         <span class="tier-flag">Most popular</span>
@@ -451,7 +451,7 @@
           <li>AI email writing — 500 per person</li>
           <li>Dynamic lists and email finder</li>
         </ul>
-        <a href="/signup?source=direct&plan=growth" class="btn btn-dark btn-block">Start 7-day free trial</a>
+        <a href="https://app.closifi.app/signup?source=direct&plan=growth" class="btn btn-dark btn-block">Start 7-day free trial</a>
       </div>
       <div class="tier">
         <h3>Pro</h3>
@@ -466,7 +466,7 @@
           <li>Replies sorted by buying intent</li>
           <li>Team roles and permissions</li>
         </ul>
-        <a href="/signup?source=direct&plan=pro" class="btn btn-outline btn-block">Start 7-day free trial</a>
+        <a href="https://app.closifi.app/signup?source=direct&plan=pro" class="btn btn-outline btn-block">Start 7-day free trial</a>
       </div>
       <div class="tier">
         <h3>Enterprise</h3>
@@ -481,7 +481,7 @@
           <li>A named account manager</li>
           <li>Support response commitments</li>
         </ul>
-        <a href="/signup?source=direct&plan=pro&intent=enterprise" class="btn btn-outline btn-block">Talk to us</a>
+        <a href="https://app.closifi.app/signup?source=direct&plan=pro&intent=enterprise" class="btn btn-outline btn-block">Talk to us</a>
       </div>
     </div>
   </div>
@@ -621,7 +621,7 @@
       <button type="submit" class="btn btn-primary">Start free trial</button>
     </form>
     <p class="legal-line" style="margin:0 auto 18px;text-align:center">7 days free · 3 seats · no card needed</p>
-    <a href="/signup?source=direct&intent=demo" style="color:#9DBFAF;font-size:15.5px">Or book a 20-minute walkthrough →</a>
+    <a href="https://app.closifi.app/signup?source=direct&intent=demo" style="color:#9DBFAF;font-size:15.5px">Or book a 20-minute walkthrough →</a>
   </div>
 </section>
 
@@ -648,7 +648,7 @@
 
 <div class="sticky">
   <span>7 days free · no card</span>
-  <a href="/signup?source=direct" class="btn btn-primary">Start 7-day free trial</a>
+  <a href="https://app.closifi.app/signup?source=direct" class="btn btn-primary">Start 7-day free trial</a>
 </div>
 
 <script>
@@ -682,6 +682,12 @@
   var plan='growth',bill='annual',seats=5;
   function $(id){return document.getElementById(id)}
   function fmt(n){return n.toLocaleString('en-US')}
+  function getAppUrl(pathAndQuery){
+    var h=window.location.hostname;
+    var isLocal=h==='localhost'||h==='127.0.0.1';
+    var base=isLocal?window.location.origin:'https://app.closifi.app';
+    return base.replace(/\/$/,'')+(pathAndQuery.startsWith('/')?pathAndQuery:'/'+pathAndQuery);
+  }
   function render(){
     var p=PLANS[plan],rate=bill==='annual'?p.a:p.m;
     $('total').textContent='$'+fmt(rate*seats);
@@ -695,7 +701,7 @@
     $('migT').textContent=fmt(p.mig);
     var calcCta = $('calcCta');
     if(calcCta) {
-      calcCta.setAttribute('href', '/signup?source=direct&plan=' + encodeURIComponent(plan));
+      calcCta.setAttribute('href', getAppUrl('/signup?source=direct&plan=' + encodeURIComponent(plan)));
     }
   }
   function group(attr,set){
@@ -716,7 +722,7 @@
       e.preventDefault();
       var i=f.querySelector('input[type=email]');
       if(i&&i.value){
-        window.location.href = '/signup?source=direct&email=' + encodeURIComponent(i.value) + '&plan=' + encodeURIComponent(plan);
+        window.location.href = getAppUrl('/signup?source=direct&email=' + encodeURIComponent(i.value) + '&plan=' + encodeURIComponent(plan));
       }
     });
   });

@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/signup",
+      "destination": "https://app.closifi.app/signup",
+      "permanent": false
+    },
+    {
+      "source": "/signup/(.*)",
+      "destination": "https://app.closifi.app/signup/$1",
+      "permanent": false
+    },
+    {
+      "source": "/login",
+      "destination": "https://app.closifi.app/login",
+      "permanent": false
+    },
+    {
+      "source": "/login/(.*)",
+      "destination": "https://app.closifi.app/login/$1",
+      "permanent": false
+    },
+    {
+      "source": "/onboarding",
+      "destination": "https://app.closifi.app/onboarding",
+      "permanent": false
+    }
+  ]
+}
