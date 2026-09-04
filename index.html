@@ -451,7 +451,7 @@
           <li>AI email writing — 500 per person</li>
           <li>Dynamic lists and email finder</li>
         </ul>
-        <a href="https://app.closifi.app/signup?source=direct&plan=growth" class="btn btn-dark btn-block">Start 7-day free trial</a>
+        <a href="https://app.closifi.app/signup?source=direct&plan=growth" class="btn btn-dark btn-block">Get Started</a>
       </div>
       <div class="tier">
         <h3>Pro</h3>
@@ -466,7 +466,7 @@
           <li>Replies sorted by buying intent</li>
           <li>Team roles and permissions</li>
         </ul>
-        <a href="https://app.closifi.app/signup?source=direct&plan=pro" class="btn btn-outline btn-block">Start 7-day free trial</a>
+        <a href="https://app.closifi.app/signup?source=direct&plan=pro" class="btn btn-outline btn-block">Get Started</a>
       </div>
       <div class="tier">
         <h3>Enterprise</h3>
@@ -545,7 +545,7 @@
       </details>
       <details>
         <summary>What does the free trial include?</summary>
-        <p>Seven days, three seats and 250 leads, with no card needed and no automatic billing when it ends. Enough to import your list, capture new prospects and get a real campaign running.</p>
+        <p>Our 7-day free trial is available exclusively on the Starter plan — providing 3 team seats and 250 lead captures, with no card needed and no automatic billing when it ends.</p>
         <p>Seven days is tight for seeing replies come back, so if you're mid-test when it runs out, ask and we'll extend it.</p>
       </details>
       <details>
@@ -702,6 +702,7 @@
     var calcCta = $('calcCta');
     if(calcCta) {
       calcCta.setAttribute('href', getAppUrl('/signup?source=direct&plan=' + encodeURIComponent(plan)));
+      calcCta.textContent = plan === 'starter' ? 'Start 7-day free trial' : 'Get Started';
     }
   }
   function group(attr,set){
